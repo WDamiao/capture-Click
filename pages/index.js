@@ -35,7 +35,8 @@ export default function Home() {
             <div className="line"></div>
             <div onClick={getCordenates} className="pointsConteiner">
                 {clickedPoint.map((clicked, idx) => {
-                    return <ClickedPoint clicked={clicked} bg={bg} idx={idx} />
+                    console.log()
+                    return <ClickedPoint clicked={clicked} bg={bg} key={idx} />
                 })}
             </div>
         </div>

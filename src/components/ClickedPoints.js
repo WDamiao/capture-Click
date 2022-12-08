@@ -1,6 +1,7 @@
-export default function ClickedPoint({clicked, bg, idx}){
+export default function ClickedPoint({clicked, bg}){
+
     return (
-        <div key={idx} style={{
+        <div style={{
             left: clicked.clientX - 10,
             top: clicked.clientY -10,
             position: "absolute",
